@@ -1,0 +1,36 @@
+# Institutions organising the Belgian SMR Day 2027.
+#
+# `logo` / `logo_dark` are file names inside /assets/images/logos/. Until a file
+# is actually present, the tile falls back to the institution's short name, so
+# the section renders correctly either way. `logo_dark` is optional and is only
+# needed for logos that become illegible on a dark tile.
+
+- name: Vrije Universiteit Brussel
+  short: VUB
+  url: https://www.vub.be/
+  logo: vub.svg
+
+- name: Université libre de Bruxelles
+  short: ULB
+  url: https://www.ulb.be/
+  logo: ulb.svg
+
+- name: UCLouvain
+  short: UCLouvain
+  url: https://uclouvain.be/
+  logo: uclouvain.svg
+
+- name: KU Leuven
+  short: KU Leuven
+  url: https://www.kuleuven.be/
+  logo: kuleuven.svg
+
+- name: Université de Liège
+  short: ULiège
+  url: https://www.uliege.be/
+  logo: uliege.svg
+
+- name: SCK CEN
+  short: SCK CEN
+  url: https://www.sckcen.be/
+  logo: sck-cen.svg

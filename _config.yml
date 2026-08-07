@@ -1,0 +1,131 @@
+# ─── Site ─────────────────────────────────────────────────────────────────────
+title: Belgian SMR Day 2027
+preposition: "at"
+description: >-
+  A one-day meeting bringing together researchers, policymakers and industry
+  around Small Modular Reactors in Belgium.
+
+# Used for absolute links, structured data and link previews.
+# The GitHub Actions workflow overrides `baseurl` at build time, so the
+# preview at guillaumederval.github.io/smrdaywebsite/ also resolves correctly.
+url: "https://smrday.be"
+baseurl: ""
+
+theme: jekyll-theme-conference
+
+plugins:
+  - jekyll-include-cache
+
+# ─── Collections (required by the theme) ──────────────────────────────────────
+collections:
+  talks:
+    output: true
+    permalink: /:collection/:title/
+  speakers:
+    output: true
+    permalink: /:collection/:title/
+  rooms:
+    output: true
+    permalink: /:collection/:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: talks
+    values:
+      layout: talk
+  - scope:
+      path: ""
+      type: speakers
+    values:
+      layout: speaker
+  - scope:
+      path: ""
+      type: rooms
+    values:
+      layout: room
+
+# ─── Conference ───────────────────────────────────────────────────────────────
+conference:
+  # The theme warns on every page while the talks/speakers/program collections
+  # are still empty. Set back to `true` while adding content, so you get the
+  # theme's validation messages; keep it `false` for anything public-facing.
+  show_errors: false
+
+  lang: en
+  tz: "+01:00"   # Brussels, CET (18 March 2027 is before the DST switch)
+
+  navigation:
+    breakpoint: md
+    links:
+      - name: Programme
+        icon: calendar4-week
+        relative_url: /program/
+      - name: Call for Abstracts
+        icon: file-earmark-text
+        relative_url: /call-for-abstracts/
+      - name: Venue
+        icon: geo-alt
+        relative_url: /location/
+      - name: Stay Informed
+        icon: envelope
+        relative_url: /updates/
+      # Uncomment once there is content to show:
+      # - name: Talks
+      #   icon: chat-square-text
+      #   relative_url: /talks/
+      # - name: Speakers
+      #   icon: people
+      #   relative_url: /speakers/
+
+  talks:
+    # Colour coding used in the programme grid and its legend. The `name` must
+    # match the `track:` in each file under _talks/.
+    tracks:
+      - name: Contributed talk
+        color: primary
+      - name: Plenary
+        color: info
+      - name: Poster & networking
+        color: success
+      - name: Break
+        color: secondary
+
+  info:
+    bars:
+      - title: Save the date
+        color: info
+        dismissal_days: 30
+        text: |
+          **18 March 2027, Brussels.** Date and venue are provisional.
+          The call for abstracts opens soon.
+
+  meta:
+    link_preview:
+      disable: false
+      # img:
+      #   open_graph: "preview.png"   # inside /assets/images/, 1200x630
+      #   twitter: "preview.png"
+    schema_org:
+      disable: false
+      event_status: "scheduled"
+      event_attendance_mode: "offline"
+      organizer:
+        name: "Belgian SMR Day 2027"
+        url: "https://smrday.be"
+
+  # ─── Mailing list ───────────────────────────────────────────────────────────
+  # Paste the endpoint of your form provider below (Formspree, Buttondown,
+  # Mailchimp, Tally, an internal handler, ...). While it is empty, the sign-up
+  # box falls back to a plain mailto: link using `fallback_email`.
+  mailing_list:
+    endpoint: ""
+    fallback_email: "info@belgian-smr-day.be"
+
+# ─── Build ────────────────────────────────────────────────────────────────────
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+  - .github

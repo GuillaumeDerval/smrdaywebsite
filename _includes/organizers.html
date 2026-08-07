@@ -1,0 +1,48 @@
+{%- comment -%}
+  Renders the organising institutions from _data/organizers.yml as a logo grid.
+  A tile shows the logo if the referenced file exists under
+  /assets/images/logos/, and otherwise falls back to the institution's name.
+{%- endcomment -%}
+
+{%- assign logo_files = site.static_files
+      | where_exp: "f", "f.path contains '/assets/images/logos/'"
+      | map: "path" | join: "|" -%}
+
+<section class="organizers my-4">
+  {%- if include.title != "" %}
+    <h2 class="h4">{{ include.title | default: "Organised by" }}</h2>
+  {%- endif %}
+
+  {%- if include.text %}
+    <p>{{ include.text }}</p>
+  {%- endif %}
+
+  <ul class="organizer-grid list-unstyled">
+    {%- for org in site.data.organizers %}
+      <li>
+        {%- if org.url %}
+          <a href="{{ org.url }}" class="organizer-tile" rel="noopener"
+             title="{{ org.name }}">
+        {%- else %}
+          <span class="organizer-tile" title="{{ org.name }}">
+        {%- endif -%}
+
+        {%- if org.logo and logo_files contains org.logo -%}
+          {%- if org.logo_dark and logo_files contains org.logo_dark -%}
+            <img src="{{ '/assets/images/logos/' | append: org.logo | relative_url }}"
+                 alt="{{ org.name }}" class="organizer-logo mode-light">
+            <img src="{{ '/assets/images/logos/' | append: org.logo_dark | relative_url }}"
+                 alt="{{ org.name }}" class="organizer-logo mode-dark">
+          {%- else -%}
+            <img src="{{ '/assets/images/logos/' | append: org.logo | relative_url }}"
+                 alt="{{ org.name }}" class="organizer-logo">
+          {%- endif -%}
+        {%- else -%}
+          <span class="organizer-name">{{ org.short | default: org.name }}</span>
+        {%- endif -%}
+
+        {%- if org.url %}</a>{% else %}</span>{% endif -%}
+      </li>
+    {%- endfor %}
+  </ul>
+</section>
