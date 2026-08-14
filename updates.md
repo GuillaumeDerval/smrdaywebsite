@@ -4,19 +4,17 @@ title: Stay Informed
 permalink: /updates/
 ---
 
-The Belgian SMR Day 2027 is still being put together. The date (18 March) and
-the city (Brussels) are set provisionally; the venue, the programme and the call
-for abstracts are still being worked out.
+The Belgian SMR Day 2027 is still being organised. The date (18 March) and the
+city (Brussels) are provisional; the venue, the programme and the call for
+abstracts will be announced later.
 
-If you would like to hear about it first, leave your email address and
-organisation in the form below. You will get a short message when:
+Sign up to the mailing list to be notified when:
 
-- the **call for abstracts** opens, and when its deadline is announced,
-- the **venue** in Brussels is confirmed,
+- the **call for abstracts** opens,
+- the **venue** is confirmed,
 - the **programme** is published, and
 - **registration** opens.
 
-That is all — a handful of emails, no newsletter, and your address is used for
-this conference only and is not shared with anyone else.
+Your email address is used for this conference only and is not shared.
 
-{% include subscribe_form.html title="Join the mailing list" text="Two fields, a few emails a year." embed=true %}
+{% include subscribe_form.html title="Join the mailing list" text="Sign-up takes place through a short Google Form." %}

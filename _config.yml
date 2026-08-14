@@ -115,8 +115,7 @@ conference:
         url: "https://smrday.be"
 
   # ─── Mailing list ───────────────────────────────────────────────────────────
-  # Google Form collecting email + organisation. Use the ".../viewform" link;
-  # the /updates/ page derives the embeddable version from it.
+  # Google Form collecting email + organisation (the ".../viewform" link).
   mailing_list:
     form_url: "https://docs.google.com/forms/d/e/1FAIpQLSc38R57WDeBz-YeL7VUn_uuDaO1ADJ7s470qQiTuW0V39kHYg/viewform"
 

@@ -36,7 +36,7 @@ The finished site is in `_site/`.
 | `call-for-abstracts.md` | Call for abstracts: topics, presentations vs posters, timeline |
 | `updates.md` | Mailing-list sign-up page |
 | `location/index.md` | Venue page and the OpenStreetMap map |
-| `_includes/subscribe_form.html` | The reusable mailing-list box (links to / embeds the Google Form) |
+| `_includes/subscribe_form.html` | The reusable mailing-list box linking to the Google Form |
 | `_data/organizers.yml` | The organising institutions and their logo file names |
 | `_includes/organizers.html` | The logo grid rendered from that file |
 | `assets/css/main.scss` | Custom styles layered on top of the theme |
@@ -58,7 +58,7 @@ conference:
     form_url: "https://docs.google.com/forms/d/e/1FAIpQLSc38R57WDeBz-YeL7VUn_uuDaO1ADJ7s470qQiTuW0V39kHYg/viewform"
 ```
 
-Every "Get notified" box links to it, and the `/updates/` page embeds it inline.
+Every "Get notified" box on the site links to it.
 Responses land in the form's *Responses* tab — link it to a Google Sheet there
 if you want a spreadsheet to email from.
 

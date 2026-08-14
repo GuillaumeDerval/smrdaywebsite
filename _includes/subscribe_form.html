@@ -1,31 +1,16 @@
 {%- comment -%}
   Mailing-list call to action. Links to the Google Form configured under
-  conference.mailing_list.form_url in _config.yml. Pass embed=true to also show
-  the form inline (used on the /updates/ page).
+  conference.mailing_list.form_url in _config.yml.
 {%- endcomment -%}
-{%- assign ml = site.conference.mailing_list -%}
 <div class="card border-primary my-4 subscribe-card">
   <div class="card-body">
     <h3 class="card-title h5">{{ include.title | default: "Get notified about updates" }}</h3>
     <p class="card-text">
-      {{ include.text | default: "Leave your email address and organisation and we will let you know when the call for abstracts opens, when the venue is confirmed, and when registration goes live. We use your address for this conference only and never share it." }}
+      {{ include.text | default: "Leave your email address to be notified when the call for abstracts opens, when the venue is confirmed, and when registration opens. Your address is used for this conference only and is not shared." }}
     </p>
-
-    {%- if include.embed %}
-      <div class="subscribe-embed mb-3">
-        <iframe src="{{ ml.form_url | replace: '/viewform', '/viewform?embedded=true' }}"
-                title="Belgian SMR Day 2027 mailing-list sign-up form"
-                loading="lazy">Loading…</iframe>
-      </div>
-      <p class="card-text small text-body-secondary mb-0">
-        Form not showing?
-        <a href="{{ ml.form_url }}" target="_blank" rel="noopener">Open it in a new tab</a>.
-      </p>
-    {%- else %}
-      <a class="btn btn-primary" href="{{ ml.form_url }}" target="_blank" rel="noopener">
-        <span class="bi bi-envelope" aria-hidden="true"></span>
-        Sign up for updates
-      </a>
-    {%- endif %}
+    <a class="btn btn-primary" href="{{ site.conference.mailing_list.form_url }}" target="_blank" rel="noopener">
+      <span class="bi bi-envelope" aria-hidden="true"></span>
+      Sign up for updates
+    </a>
   </div>
 </div>
