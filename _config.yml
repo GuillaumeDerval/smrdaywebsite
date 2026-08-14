@@ -2,8 +2,8 @@
 title: Belgian SMR Day 2027
 preposition: "at"
 description: >-
-  A one-day meeting bringing together researchers, policymakers and industry
-  around Small Modular Reactors in Belgium.
+  A one-day conference on small modular reactors for researchers, companies,
+  potential users and policymakers.
 
 # Used for absolute links, structured data and link previews.
 # The GitHub Actions workflow overrides `baseurl` at build time, so the
@@ -61,7 +61,7 @@ conference:
       - name: Programme
         icon: calendar4-week
         relative_url: /program/
-      - name: Call for Abstracts
+      - name: Call for abstracts
         icon: file-earmark-text
         relative_url: /call-for-abstracts/
       # Uncomment once there is content to show:
@@ -91,9 +91,9 @@ conference:
         color: info
         dismissal_days: 30
         text: |
-          **18 March 2027, Brussels.** Date and venue are provisional.
-          The call for abstracts opens soon —
-          [sign up for updates](https://docs.google.com/forms/d/e/1FAIpQLSc38R57WDeBz-YeL7VUn_uuDaO1ADJ7s470qQiTuW0V39kHYg/viewform){:target="_blank" rel="noopener"}.
+          18 March 2027 in Brussels. The date and venue are provisional.
+          The call for abstracts will open soon.
+          [Sign up for updates](https://docs.google.com/forms/d/e/1FAIpQLSc38R57WDeBz-YeL7VUn_uuDaO1ADJ7s470qQiTuW0V39kHYg/viewform){:target="_blank" rel="noopener"}.
 
   meta:
     link_preview:

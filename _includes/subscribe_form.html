@@ -6,7 +6,7 @@
   <div class="card-body">
     <h3 class="card-title h5">{{ include.title | default: "Get notified about updates" }}</h3>
     <p class="card-text">
-      {{ include.text | default: "Leave your email address to be notified when the call for abstracts opens, when the venue is confirmed, and when registration opens. Your address is used for this conference only and is not shared." }}
+      {{ include.text | default: "Sign up to receive news about the conference, for example when the call for abstracts or registration opens. Your email address is only used for this conference." }}
     </p>
     <a class="btn btn-primary" href="{{ site.conference.mailing_list.form_url }}" target="_blank" rel="noopener">
       <span class="bi bi-envelope" aria-hidden="true"></span>
