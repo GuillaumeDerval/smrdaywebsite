@@ -4,5 +4,4 @@ track: Contributed talk
 hide: true
 ---
 
-Speaker and title to be announced. This slot will be filled from the call for
-abstracts.
+The speaker and title will be announced after the call for abstracts.

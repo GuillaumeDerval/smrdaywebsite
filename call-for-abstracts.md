@@ -4,39 +4,29 @@ title: Call for abstracts
 permalink: /call-for-abstracts/
 ---
 
-The call for abstracts for **Belgian SMR Day 2027**, the first edition, will
-open soon. This page will be updated with the submission link and the full
-instructions as soon as they are fixed.
+The call for abstracts for the Belgian SMR Day 2027 will open soon. The
+submission link and instructions will be published on this page.
 
-## What we are looking for
+## Who can submit
 
-Contributions from every community working on Small Modular Reactors in or with
-Belgium — academia and research centres, public administration and regulators,
-and industry. Both mature results and work in progress are welcome; so are
-contributions that describe a roadmap, a constraint or an open problem rather
-than a finished result.
+Abstracts are welcome from researchers, companies working on or around small
+modular reactors (SMRs), potential users of SMRs and policymakers. Submissions
+can present finished results as well as ongoing work, plans or open questions.
 
-Indicative topics:
+Possible topics include:
 
 - Reactor physics, thermal-hydraulics and modelling
 - Materials, fuels and the fuel cycle
-- Safety, licensing and regulatory frameworks
-- Siting, deployment scenarios and grid integration
-- Economics, financing and supply-chain readiness
-- Policy, governance and public engagement
+- Safety, licensing and regulation
+- Siting, deployment and grid integration
+- Economics, financing and the supply chain
+- Policy and public engagement
 
 ## Presentations and posters
 
-Every abstract is reviewed by the programme committee, which then selects:
-
-- a set of contributions for **oral presentations** in the main programme, and
-- a set of contributions for the **poster session**, which runs alongside the
-  breaks so there is real time to talk.
-
-Authors indicate their preference when submitting; the committee may propose the
-other format where it makes for a better programme. Being selected for a poster
-is not a second-tier outcome — the poster session is where a lot of the
-cross-community matchmaking is expected to happen.
+The programme committee will review the abstracts and select contributions for
+an oral presentation or for the poster session. Details on the submission and
+selection process will be given when the call opens.
 
 ## Timeline
 
@@ -45,7 +35,7 @@ cross-community matchmaking is expected to happen.
 | Call for abstracts opens | To be announced |
 | Submission deadline | To be announced |
 | Notification of acceptance | To be announced |
-| Conference | 18 March 2027 *(provisional)* |
+| Conference | 18 March 2027 (provisional) |
 {: .table .table-sm }
 
-{% include subscribe_form.html title="Be the first to know when the call opens" text="We will email you when the call for abstracts opens and when the submission deadline is announced." %}
+{% include subscribe_form.html title="Get notified when the call opens" text="Sign up to receive an email when the call for abstracts opens." %}

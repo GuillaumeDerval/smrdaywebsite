@@ -3,4 +3,4 @@ name: Closing words
 track: Plenary
 ---
 
-Wrap-up and next steps.
+Closing remarks by the organisers.
