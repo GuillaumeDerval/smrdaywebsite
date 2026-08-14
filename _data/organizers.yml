@@ -25,6 +25,14 @@
   url: https://www.kuleuven.be/
   logo: kuleuven.svg
 
+- name: Ghent University
+  short: UGent
+  url: https://www.ugent.be/
+  logo: ugent.svg
+  # Compact square mark: let it use the full tile height so it reads at the
+  # same visual weight as the wide wordmarks.
+  logo_class: organizer-logo-compact
+
 - name: Université de Liège
   short: ULiège
   url: https://www.uliege.be/

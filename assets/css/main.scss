@@ -82,6 +82,12 @@ main {
   object-fit: contain;
 }
 
+// For square or stacked marks that look undersized next to wide wordmarks.
+// Set with `logo_class: organizer-logo-compact` in _data/organizers.yml.
+.organizer-logo.organizer-logo-compact {
+  max-height: 4rem;
+}
+
 // Fallback shown until the logo file is dropped into /assets/images/logos/.
 .organizer-name {
   color: #212529; // fixed, because the tile is always light

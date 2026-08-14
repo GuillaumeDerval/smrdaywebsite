@@ -34,8 +34,6 @@ The finished site is in `_site/`.
 | `_config.yml` | Site title, date/venue banner, navigation, mailing-list form link |
 | `index.md` | Landing page: date, location, what the conference is, CFA teaser |
 | `call-for-abstracts.md` | Call for abstracts: topics, presentations vs posters, timeline |
-| `updates.md` | Mailing-list sign-up page |
-| `location/index.md` | Venue page and the OpenStreetMap map |
 | `_includes/subscribe_form.html` | The reusable mailing-list box linking to the Google Form |
 | `_data/organizers.yml` | The organising institutions and their logo file names |
 | `_includes/organizers.html` | The logo grid rendered from that file |
@@ -89,8 +87,8 @@ is empty, which is expected until abstracts are accepted.
 
 ### 3. Replace the organisers' logos with official files
 
-`_data/organizers.yml` lists the six organising institutions and the logo file
-each tile uses. All six files are already in `assets/images/logos/`, taken
+`_data/organizers.yml` lists the seven organising institutions and the logo file
+each tile uses. All seven files are already in `assets/images/logos/`, taken
 directly from each institution's own website:
 
 | Institution | File | Fetched from |
@@ -99,13 +97,14 @@ directly from each institution's own website:
 | Université libre de Bruxelles | `ulb.svg` | `ulb.be/uas/ulbout/LOGO/Logo-ULB.svg` |
 | UCLouvain | `uclouvain.svg` | `uclouvain.be/themes/custom/uclouvain_theme/logo.svg` |
 | KU Leuven | `kuleuven.svg` | `stijl.kuleuven.be/releases/latest/img/svg/logo.svg` |
+| Ghent University | `ugent.svg` | `ugent.be/++theme++ugent/static/images/logo_ugent_en.svg` |
 | Université de Liège | `uliege.svg` | `uliege.be/plugins/ULiegePlugin/images/Header/logo.svg` |
 | SCK CEN | `sck-cen.svg` | `sckcen.be/themes/custom/itr_theme/logo.svg` |
 
 These are the site-header versions, not files obtained from a press kit. Before
 the site goes public, ask each partner's communications office for their
 official logo package and swap the files in — same file names, nothing else to
-change. All six institutions have visual-identity guidelines governing
+change. All seven institutions have visual-identity guidelines governing
 third-party use, and several (VUB and ULiège among them) distribute their
 logos as a ZIP on request rather than as a public download.
 

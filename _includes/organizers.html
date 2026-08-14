@@ -30,12 +30,12 @@
         {%- if org.logo and logo_files contains org.logo -%}
           {%- if org.logo_dark and logo_files contains org.logo_dark -%}
             <img src="{{ '/assets/images/logos/' | append: org.logo | relative_url }}"
-                 alt="{{ org.name }}" class="organizer-logo mode-light">
+                 alt="{{ org.name }}" class="organizer-logo {{ org.logo_class }} mode-light">
             <img src="{{ '/assets/images/logos/' | append: org.logo_dark | relative_url }}"
-                 alt="{{ org.name }}" class="organizer-logo mode-dark">
+                 alt="{{ org.name }}" class="organizer-logo {{ org.logo_class }} mode-dark">
           {%- else -%}
             <img src="{{ '/assets/images/logos/' | append: org.logo | relative_url }}"
-                 alt="{{ org.name }}" class="organizer-logo">
+                 alt="{{ org.name }}" class="organizer-logo {{ org.logo_class }}">
           {%- endif -%}
         {%- else -%}
           <span class="organizer-name">{{ org.short | default: org.name }}</span>

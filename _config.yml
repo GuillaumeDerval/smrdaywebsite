@@ -64,12 +64,6 @@ conference:
       - name: Call for Abstracts
         icon: file-earmark-text
         relative_url: /call-for-abstracts/
-      - name: Venue
-        icon: geo-alt
-        relative_url: /location/
-      - name: Stay Informed
-        icon: envelope
-        relative_url: /updates/
       # Uncomment once there is content to show:
       # - name: Talks
       #   icon: chat-square-text
@@ -98,7 +92,8 @@ conference:
         dismissal_days: 30
         text: |
           **18 March 2027, Brussels.** Date and venue are provisional.
-          The call for abstracts opens soon.
+          The call for abstracts opens soon —
+          [sign up for updates](https://docs.google.com/forms/d/e/1FAIpQLSc38R57WDeBz-YeL7VUn_uuDaO1ADJ7s470qQiTuW0V39kHYg/viewform){:target="_blank" rel="noopener"}.
 
   meta:
     link_preview:

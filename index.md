@@ -7,9 +7,6 @@ links:
   - name: Call for Abstracts
     icon: file-earmark-text
     relative_url: /call-for-abstracts/
-  - name: Venue
-    icon: geo-alt
-    relative_url: /location/
 ---
 
 <div class="row g-4 key-facts">
