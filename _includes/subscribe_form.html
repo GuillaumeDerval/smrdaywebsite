@@ -1,45 +1,31 @@
+{%- comment -%}
+  Mailing-list call to action. Links to the Google Form configured under
+  conference.mailing_list.form_url in _config.yml. Pass embed=true to also show
+  the form inline (used on the /updates/ page).
+{%- endcomment -%}
 {%- assign ml = site.conference.mailing_list -%}
 <div class="card border-primary my-4 subscribe-card">
   <div class="card-body">
     <h3 class="card-title h5">{{ include.title | default: "Get notified about updates" }}</h3>
     <p class="card-text">
-      {{ include.text | default: "Leave your email address and we will let you know when the call for abstracts opens, when the venue is confirmed, and when registration goes live. We use your address for this conference only and never share it." }}
+      {{ include.text | default: "Leave your email address and organisation and we will let you know when the call for abstracts opens, when the venue is confirmed, and when registration goes live. We use your address for this conference only and never share it." }}
     </p>
 
-    {%- if ml.endpoint and ml.endpoint != "" %}
-      <form action="{{ ml.endpoint }}" method="POST" class="row g-2 align-items-start">
-        <div class="col-12 col-md-5">
-          <label for="subscribe-email-{{ include.id | default: 'main' }}" class="visually-hidden">Email address</label>
-          <input type="email" name="email" required autocomplete="email"
-                 class="form-control" placeholder="you@example.org"
-                 id="subscribe-email-{{ include.id | default: 'main' }}">
-        </div>
-        <div class="col-12 col-md-4">
-          <label for="subscribe-org-{{ include.id | default: 'main' }}" class="visually-hidden">Affiliation (optional)</label>
-          <input type="text" name="affiliation"
-                 class="form-control" placeholder="Affiliation (optional)"
-                 id="subscribe-org-{{ include.id | default: 'main' }}">
-        </div>
-        <div class="col-12 col-md-3 d-grid">
-          <button type="submit" class="btn btn-primary">Keep me posted</button>
-        </div>
-        {%- comment %} Simple honeypot against spam bots {% endcomment -%}
-        <input type="text" name="_gotcha" tabindex="-1" autocomplete="off"
-               class="d-none" aria-hidden="true">
-      </form>
+    {%- if include.embed %}
+      <div class="subscribe-embed mb-3">
+        <iframe src="{{ ml.form_url | replace: '/viewform', '/viewform?embedded=true' }}"
+                title="Belgian SMR Day 2027 mailing-list sign-up form"
+                loading="lazy">Loading…</iframe>
+      </div>
+      <p class="card-text small text-body-secondary mb-0">
+        Form not showing?
+        <a href="{{ ml.form_url }}" target="_blank" rel="noopener">Open it in a new tab</a>.
+      </p>
     {%- else %}
-      <a class="btn btn-primary"
-         href="mailto:{{ ml.fallback_email }}?subject=Belgian%20SMR%20Day%202027%20%E2%80%93%20keep%20me%20posted&amp;body=Please%20add%20me%20to%20the%20mailing%20list%20for%20the%20Belgian%20SMR%20Day%202027.%0A%0AName%3A%0AAffiliation%3A">
+      <a class="btn btn-primary" href="{{ ml.form_url }}" target="_blank" rel="noopener">
         <span class="bi bi-envelope" aria-hidden="true"></span>
-        Email us to be added
+        Sign up for updates
       </a>
-      {%- if jekyll.environment != "production" %}
-        <p class="card-text mt-3 small text-body-secondary mb-0">
-          <em>Note for site maintainers (hidden in production builds):</em> set
-          <code>conference.mailing_list.endpoint</code> in <code>_config.yml</code>
-          to replace this link with an inline sign-up form.
-        </p>
-      {%- endif %}
     {%- endif %}
   </div>
 </div>

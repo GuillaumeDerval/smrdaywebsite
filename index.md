@@ -58,7 +58,7 @@ the programme committee, and selected contributions will be scheduled either as
 provisional) timeline are on the
 [call for abstracts]({{ '/call-for-abstracts/' | relative_url }}) page.
 
-{% include subscribe_form.html id="home" %}
+{% include subscribe_form.html %}
 
 ## Organised by
 

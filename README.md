@@ -22,9 +22,7 @@ To produce the files to upload:
 JEKYLL_ENV=production bundle exec jekyll build
 ```
 
-The finished site is in `_site/`. Setting `JEKYLL_ENV=production` also hides the
-maintainer notes that the sign-up box shows while no form endpoint is
-configured.
+The finished site is in `_site/`.
 
 > Ruby is installed via Homebrew here. If `bundle` is not found, run
 > `export PATH="/opt/homebrew/opt/ruby/bin:$PATH"` first.
@@ -33,12 +31,12 @@ configured.
 
 | File | What it holds |
 |---|---|
-| `_config.yml` | Site title, date/venue banner, navigation, mailing-list endpoint |
+| `_config.yml` | Site title, date/venue banner, navigation, mailing-list form link |
 | `index.md` | Landing page: date, location, what the conference is, CFA teaser |
 | `call-for-abstracts.md` | Call for abstracts: topics, presentations vs posters, timeline |
 | `updates.md` | Mailing-list sign-up page |
 | `location/index.md` | Venue page and the OpenStreetMap map |
-| `_includes/subscribe_form.html` | The reusable e-mail sign-up box |
+| `_includes/subscribe_form.html` | The reusable mailing-list box (links to / embeds the Google Form) |
 | `_data/organizers.yml` | The organising institutions and their logo file names |
 | `_includes/organizers.html` | The logo grid rendered from that file |
 | `assets/css/main.scss` | Custom styles layered on top of the theme |
@@ -49,28 +47,26 @@ configured.
 
 ## Things to do before going live
 
-### 1. Wire up the e-mail sign-up
+### 1. Check the mailing-list form
 
-The sign-up box currently falls back to a `mailto:` link. To collect addresses
-properly, pick a form backend that accepts a plain HTML `POST`
-([Formspree](https://formspree.io/), [Tally](https://tally.so/),
-[Buttondown](https://buttondown.com/), Mailchimp's hosted form, or something
-self-hosted) and paste its endpoint into `_config.yml`:
+Sign-ups go through a Google Form (fields: email, organisation), set in
+`_config.yml`:
 
 ```yaml
 conference:
   mailing_list:
-    endpoint: "https://formspree.io/f/xxxxxxxx"
-    fallback_email: "info@belgian-smr-day.be"
+    form_url: "https://docs.google.com/forms/d/e/1FAIpQLSc38R57WDeBz-YeL7VUn_uuDaO1ADJ7s470qQiTuW0V39kHYg/viewform"
 ```
 
-The form then posts an `email` field and an optional `affiliation` field, and
-includes a hidden honeypot field (`_gotcha`) that most providers use to drop
-bot submissions. Since this collects personal data from EU residents, keep the
-retention short and say what you do with the address — the current wording
-("used for this conference only, never shared") should match reality.
+Every "Get notified" box links to it, and the `/updates/` page embeds it inline.
+Responses land in the form's *Responses* tab — link it to a Google Sheet there
+if you want a spreadsheet to email from.
 
-Also replace `fallback_email` with a real address.
+Since this collects personal data from EU residents, the wording on the site
+("used for this conference only, never shared") should match what you actually
+do, and it is worth adding a one-line privacy note in the form's description
+too. Make sure the form is set to accept responses without a Google sign-in, or
+most external visitors will bounce.
 
 ### 2. Keep build warnings off in production
 
@@ -183,8 +179,8 @@ The site is hosted on **GitHub Pages** at <https://smrday.be>, built by
 `.github/workflows/pages.yml`. Every push to `main` rebuilds and redeploys; the
 run also builds on pull requests to `main` only if you add that trigger.
 
-The workflow runs `bundle exec jekyll build` with `JEKYLL_ENV=production` (so
-the maintainer notes in the sign-up box stay hidden) and passes the Pages
+The workflow runs `bundle exec jekyll build` with `JEKYLL_ENV=production` and
+passes the Pages
 `base_path` as `--baseurl`, which means the site resolves both at the custom
 domain and at the `guillaumederval.github.io/smrdaywebsite/` fallback.
 

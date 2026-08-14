@@ -48,4 +48,4 @@ cross-community matchmaking is expected to happen.
 | Conference | 18 March 2027 *(provisional)* |
 {: .table .table-sm }
 
-{% include subscribe_form.html id="cfa" title="Be the first to know when the call opens" text="We will email you when the call for abstracts opens and when the submission deadline is announced." %}
+{% include subscribe_form.html title="Be the first to know when the call opens" text="We will email you when the call for abstracts opens and when the submission deadline is announced." %}

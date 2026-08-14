@@ -115,12 +115,10 @@ conference:
         url: "https://smrday.be"
 
   # ─── Mailing list ───────────────────────────────────────────────────────────
-  # Paste the endpoint of your form provider below (Formspree, Buttondown,
-  # Mailchimp, Tally, an internal handler, ...). While it is empty, the sign-up
-  # box falls back to a plain mailto: link using `fallback_email`.
+  # Google Form collecting email + organisation. Use the ".../viewform" link;
+  # the /updates/ page derives the embeddable version from it.
   mailing_list:
-    endpoint: ""
-    fallback_email: "info@belgian-smr-day.be"
+    form_url: "https://docs.google.com/forms/d/e/1FAIpQLSc38R57WDeBz-YeL7VUn_uuDaO1ADJ7s470qQiTuW0V39kHYg/viewform"
 
 # ─── Build ────────────────────────────────────────────────────────────────────
 exclude:

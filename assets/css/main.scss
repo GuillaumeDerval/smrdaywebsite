@@ -99,3 +99,14 @@ main {
     width: 100% !important;
   }
 }
+
+// Embedded Google Form on the /updates/ page. The form is short (two fields),
+// but Google's embed adds its own header and footer chrome.
+.subscribe-embed iframe {
+  display: block;
+  width: 100%;
+  height: 46rem;
+  border: 0;
+  border-radius: var(--bs-border-radius);
+  background-color: #fff;
+}
