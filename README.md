@@ -34,6 +34,7 @@ The finished site is in `_site/`.
 | `_config.yml` | Site title, date/venue banner, navigation, mailing-list form link |
 | `index.md` | Landing page: date, location, what the conference is, CFA teaser |
 | `call-for-abstracts.md` | Call for posters: SMR topics of interest and timeline |
+| `committee.md` | Organising committee and contact details |
 | `_includes/subscribe_form.html` | The reusable mailing-list box linking to the Google Form |
 | `_data/organizers.yml` | The organising institutions and their logo file names |
 | `_includes/organizers.html` | The logo grid rendered from that file |

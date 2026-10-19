@@ -64,6 +64,9 @@ conference:
       - name: Call for posters
         icon: file-earmark-text
         relative_url: /call-for-abstracts/
+      - name: Committee & contact
+        icon: people
+        relative_url: /committee/
       # Uncomment once there is content to show:
       # - name: Talks
       #   icon: chat-square-text
