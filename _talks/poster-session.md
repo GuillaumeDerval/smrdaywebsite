@@ -1,5 +1,5 @@
 ---
-name: "Poster session: Master students, PhD students, young researchers"
+name: Poster session
 track: Poster session
 ---
 
