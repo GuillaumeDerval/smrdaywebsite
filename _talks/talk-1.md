@@ -1,7 +1,8 @@
 ---
-name: Talk 1
-track: Contributed talk
-hide: true
+name: "Talk 1: Belgian SMR plan"
+track: Plenary
+speakers:
+  - TBA
 ---
 
-The speaker and title will be announced after the call for abstracts.
+The Belgian SMR plan.

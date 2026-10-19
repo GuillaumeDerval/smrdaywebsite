@@ -1,6 +1,8 @@
 ---
-name: Welcome
+name: "Welcome: Objective of the day"
 track: Plenary
+speakers:
+  - TBA
 ---
 
-Opening of the Belgian SMR Day 2027 by the organisers.
+Objective of the day.

@@ -1,7 +1,7 @@
 ---
-name: Poster session & networking
-track: Poster & networking
+name: "Poster session: Master students, PhD students, young researchers"
+track: Poster session
 ---
 
-The poster session lasts one hour, and coffee is served during the session.
-Posters are selected through the call for abstracts.
+The poster session lasts one hour and features work by master students, PhD
+students and young researchers.

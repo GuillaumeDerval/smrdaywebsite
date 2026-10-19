@@ -1,7 +1,8 @@
 ---
-name: Talk 5
-track: Contributed talk
-hide: true
+name: "Talk 5: Industrial challenges related to SMR deployment"
+track: Plenary
+speakers:
+  - TBA
 ---
 
-The speaker and title will be announced after the call for abstracts.
+Industrial challenges related to SMR deployment.

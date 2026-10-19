@@ -1,7 +1,8 @@
 ---
-name: Talk 3
-track: Contributed talk
-hide: true
+name: "Talk 3: Tractebel role in SMR"
+track: Plenary
+speakers:
+  - TBA
 ---
 
-The speaker and title will be announced after the call for abstracts.
+The role of Tractebel in SMR.

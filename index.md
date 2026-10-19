@@ -4,7 +4,7 @@ links:
   - name: Programme
     icon: calendar4-week
     relative_url: /program/
-  - name: Call for abstracts
+  - name: Call for posters
     icon: file-earmark-text
     relative_url: /call-for-abstracts/
 ---
@@ -24,21 +24,25 @@ links:
 
 ## About the conference
 
-The Belgian SMR Day brings together researchers, companies working on or around
-small modular reactors (SMRs), potential users of SMRs and policymakers.
-Participants present their work, learn what the other groups are doing and meet
-each other, with the aim of starting new collaborations.
+The Belgian SMR Day is a meeting point for the research community working on
+small modular reactors (SMRs). Researchers from across disciplines and
+institutions can share their work, exchange ideas and build new collaborations.
+The day also welcomes industry, potential users, public authorities and
+policymakers, encouraging dialogue between research and the wider SMR
+ecosystem.
 
-The programme consists of talks, a poster session and a panel discussion. The
-coffee breaks, the lunch and the poster session are also meant for networking.
+The programme consists of scheduled talks, a poster session and a panel
+discussion. The coffee breaks, lunch and poster session are also opportunities
+for networking.
 A [provisional programme]({{ '/program/' | relative_url }}) is available.
 
-## Call for abstracts
+## Call for posters
 
-The call for abstracts will open soon. The programme committee will select
-submissions for an oral presentation or for the poster session. More
-information is on the [call for abstracts]({{ '/call-for-abstracts/' | relative_url }})
-page.
+The poster call will open soon. See the
+[call for posters]({{ '/call-for-abstracts/' | relative_url }}) page for topics
+of interest and further details. A
+[plain-text email invitation]({{ '/documents/community-email.txt' | relative_url }})
+is available to share with colleagues.
 
 {% include subscribe_form.html %}
 

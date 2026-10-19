@@ -61,7 +61,7 @@ conference:
       - name: Programme
         icon: calendar4-week
         relative_url: /program/
-      - name: Call for abstracts
+      - name: Call for posters
         icon: file-earmark-text
         relative_url: /call-for-abstracts/
       # Uncomment once there is content to show:
@@ -80,7 +80,7 @@ conference:
         color: primary
       - name: Plenary
         color: info
-      - name: Poster & networking
+      - name: Poster session
         color: success
       - name: Break
         color: secondary
@@ -92,7 +92,7 @@ conference:
         dismissal_days: 30
         text: |
           18 March 2027 in Brussels. The date and venue are provisional.
-          The call for abstracts will open soon.
+          The poster call will open soon.
           [Sign up for updates](https://docs.google.com/forms/d/e/1FAIpQLSc38R57WDeBz-YeL7VUn_uuDaO1ADJ7s470qQiTuW0V39kHYg/viewform){:target="_blank" rel="noopener"}.
 
   meta:

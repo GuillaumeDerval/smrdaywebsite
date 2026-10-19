@@ -1,41 +1,57 @@
 ---
 layout: page
-title: Call for abstracts
+title: Call for posters
 permalink: /call-for-abstracts/
 ---
 
-The call for abstracts for the Belgian SMR Day 2027 will open soon. The
-submission link and instructions will be published on this page.
+The Belgian SMR Day 2027 invites poster abstracts on small modular reactors
+(SMRs) and the activities, technologies and capabilities relevant to their
+potential deployment in Belgium and abroad. We welcome contributions from across the SMR
+value chain.
 
-## Who can submit
+The call is open to researchers, students, companies, industrial organisations,
+potential SMR users, public authorities and other stakeholders. Abstracts may
+describe completed work, ongoing projects, methods, case studies, lessons
+learned or well-defined research and engineering challenges.
 
-Abstracts are welcome from researchers, companies working on or around small
-modular reactors (SMRs), potential users of SMRs and policymakers. Submissions
-can present finished results as well as ongoing work, plans or open questions.
+## Topics of interest
 
-Possible topics include:
+Topics may include, but are not limited to:
 
-- Reactor physics, thermal-hydraulics and modelling
-- Materials, fuels and the fuel cycle
-- Safety, licensing and regulation
-- Siting, deployment and grid integration
-- Economics, financing and the supply chain
-- Policy and public engagement
+- Reactor concepts, design, physics, modelling and thermal-hydraulics
+- Nuclear fuel, fuel-cycle services, radioactive waste and decommissioning
+- Materials, components, manufacturing and supply chains
+- Safety, security, safeguards, licensing and regulation
+- Siting, environmental assessment, project delivery, construction and operation
+- Energy-system integration, industrial applications, economics and financing
+- Digital technologies, workforce, policy and public engagement
 
-## Presentations and posters
 
-The programme committee will review the abstracts and select contributions for
-an oral presentation or for the poster session. Details on the submission and
-selection process will be given when the call opens.
+We are interested in work at any stage of the process that could be relevant
+to Belgium, including research, industrial readiness, infrastructure,
+regulation, deployment and operation. The list is intentionally broad:
+submissions need not address the reactor itself if they contribute to an SMR
+activity or capability that may take place in Belgium.
+
+## Posters
+
+The programme committee will review submitted abstracts for relevance to the
+conference and suitability for poster presentation. Accepted contributions will
+be presented as posters. Submission instructions, abstract requirements and
+the submission link will be published here when the call opens.
+
+Posters will be on display throughout the day. Presenters are expected to attend
+the dedicated afternoon session to present their work and discuss it with
+participants.
 
 ## Timeline
 
 | Milestone | Date |
 |---|---|
-| Call for abstracts opens | To be announced |
+| Poster call opens | To be announced |
 | Submission deadline | To be announced |
 | Notification of acceptance | To be announced |
 | Conference | 18 March 2027 (provisional) |
 {: .table .table-sm }
 
-{% include subscribe_form.html title="Get notified when the call opens" text="Sign up to receive an email when the call for abstracts opens." %}
+{% include subscribe_form.html title="Get notified when the call opens" text="Sign up to receive an email when the poster call opens." %}

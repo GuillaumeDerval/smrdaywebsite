@@ -33,7 +33,7 @@ The finished site is in `_site/`.
 |---|---|
 | `_config.yml` | Site title, date/venue banner, navigation, mailing-list form link |
 | `index.md` | Landing page: date, location, what the conference is, CFA teaser |
-| `call-for-abstracts.md` | Call for abstracts: topics, presentations vs posters, timeline |
+| `call-for-abstracts.md` | Call for posters: SMR topics of interest and timeline |
 | `_includes/subscribe_form.html` | The reusable mailing-list box linking to the Google Form |
 | `_data/organizers.yml` | The organising institutions and their logo file names |
 | `_includes/organizers.html` | The logo grid rendered from that file |
@@ -134,27 +134,23 @@ the date, the venue and the organiser name in `_config.yml`.
 The provisional schedule lives in two places that have to agree:
 
 - `_data/program.yml` holds the timetable — one day, one room (`Main Hall`), and
-  fourteen slots with start and end times.
+  thirteen slots with start and end times.
 - `_talks/` holds one file per slot, breaks included. The `name:` in each file
   must match the `name:` used in `_data/program.yml` exactly, or the slot
   renders empty.
 
 Colour coding comes from the `track:` in each talk file, matched against
-`conference.talks.tracks` in `_config.yml`. The four tracks are
-`Contributed talk`, `Plenary`, `Poster & networking` and `Break`.
+`conference.talks.tracks` in `_config.yml`. The tracks are `Contributed talk`, `Plenary`, `Poster session` and `Break`.
 
 ### Filling a talk slot
 
-`_talks/talk-1.md` … `talk-6.md` are the placeholders for contributions coming
-out of the call for abstracts. For each one:
+`_talks/talk-1.md` … `talk-7.md` contain the scheduled talks. For each one:
 
-1. Rename the file and change `name:` to the real talk title, then update the
-   matching entry in `_data/program.yml` to the same title.
-2. Remove `hide: true` so the slot links to its own page.
-3. Add `speakers:` listing the speaker names, and create a file per speaker in
-   `_speakers/` whose `name:` matches. Speaker files need `first_name` and
-   `last_name` as well.
-4. Write the abstract in the body of the talk file.
+1. Update `name:` and the matching entry in `_data/program.yml` together.
+2. Replace `TBA` in `speakers:` with the confirmed speaker names, and create a
+   file per speaker in `_speakers/` whose `name:` matches. Speaker files need
+   `first_name` and `last_name` as well.
+3. Update the description in the body of the talk file.
 
 Then uncomment the Talks and Speakers entries under
 `conference.navigation.links` in `_config.yml` so the overview pages become

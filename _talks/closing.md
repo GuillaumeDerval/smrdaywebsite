@@ -1,6 +1,8 @@
 ---
-name: Closing words
+name: Concluding remarks
 track: Plenary
+speakers:
+  - TBA
 ---
 
-Closing remarks by the organisers.
+Concluding remarks.

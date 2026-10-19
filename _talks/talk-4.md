@@ -1,7 +1,8 @@
 ---
-name: Talk 4
-track: Contributed talk
-hide: true
+name: "Talk 4: R&D needs for SMR deployment"
+track: Plenary
+speakers:
+  - TBA
 ---
 
-The speaker and title will be announced after the call for abstracts.
+R&D needs for SMR deployment.

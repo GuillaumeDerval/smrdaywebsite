@@ -1,7 +1,8 @@
 ---
-name: Talk 6
-track: Contributed talk
-hide: true
+name: "Talk 6: SMR chairs"
+track: Plenary
+speakers:
+  - TBA
 ---
 
-The speaker and title will be announced after the call for abstracts.
+SMR chairs.

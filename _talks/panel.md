@@ -1,6 +1,8 @@
 ---
-name: Panel discussion
+name: "Panel discussion - Q&A session: Which factors can enable SMR deployment?"
 track: Plenary
+speakers:
+  - TBA
 ---
 
-The topic and the panellists will be announced later.
+Which factors can enable SMR deployment?

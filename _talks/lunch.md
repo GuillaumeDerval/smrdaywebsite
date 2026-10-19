@@ -1,5 +1,5 @@
 ---
-name: Lunch & networking
+name: Lunch break
 track: Break
 hide: true
 ---
