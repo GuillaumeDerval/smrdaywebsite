@@ -1,8 +1,8 @@
 ---
-name: "Welcome: Objective of the day"
+name: "Welcome"
 track: Plenary
 speakers:
   - TBA
 ---
 
-Objective of the day.
+Welcome.

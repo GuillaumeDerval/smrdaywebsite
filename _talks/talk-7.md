@@ -1,5 +1,5 @@
 ---
-name: "Talk 7: R&D financing ways"
+name: "Talk 7: R&D financing"
 track: Plenary
 speakers:
   - TBA
